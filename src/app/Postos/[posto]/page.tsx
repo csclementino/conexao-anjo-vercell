@@ -31,7 +31,7 @@ const postos = {
     },
 };
 
-export default function PaginaPosto() {
+export default async function PaginaPosto() {
     const { posto } = useParams();
     const postoData = postos[posto as keyof typeof postos];
 
