@@ -4,11 +4,13 @@ import BotaoVoltar from "@/components/botaoVoltarLaranja/page";
 import Link from "next/link";
 import Image from "next/image";
 
+
 interface Props {
-    params: {
+    params: Promise<{
         categoria: string;
-    };
+    }>;
 }
+
 
 const postosMock: Record<string, { nome: string; postos: { nome: string; rota: string }[] }> = {
     alimentos: {
@@ -51,8 +53,8 @@ const postosMock: Record<string, { nome: string; postos: { nome: string; rota: s
     },
 };
 
-export default async function CategoriaPage({ params }: Props) { // Torna a função async
-    const { categoria } = await params; // Adiciona 'await' aqui
+export default async function CategoriaPage({ params }: Props) {
+    const { categoria } = await params; 
     const categoriaData = postosMock[categoria];
 
     if (!categoriaData) {
