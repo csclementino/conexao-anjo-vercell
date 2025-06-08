@@ -59,12 +59,13 @@ const postosMock: Record<string, PostoData> = {
 
 type Props = {
   params: {
+    categoria: string;
     posto: string;
   };
 };
 
-export default function RetiradaDoacaoPage({ params }: Props) {
-  const { posto } = params;
+export default async function RetiradaDoacaoPage({ params }: Props) {
+  const { posto } = await params; 
   const postoData: PostoData | undefined = postosMock[posto.toLowerCase()];
 
   if (!postoData) return notFound();

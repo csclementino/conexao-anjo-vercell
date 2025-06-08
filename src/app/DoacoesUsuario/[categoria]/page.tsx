@@ -51,8 +51,8 @@ const postosMock: Record<string, { nome: string; postos: { nome: string; rota: s
     },
 };
 
-export default function CategoriaPage({ params }: Props) {
-    const { categoria } = params;
+export default async function CategoriaPage({ params }: Props) { // Torna a função async
+    const { categoria } = await params; // Adiciona 'await' aqui
     const categoriaData = postosMock[categoria];
 
     if (!categoriaData) {
