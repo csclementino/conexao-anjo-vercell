@@ -9,20 +9,20 @@ export default function Header() {
                 <div className="flex items-center justify-between p-4">
                     <img src="titulo_logo.png" alt="Logo" className="w-20 h-12" />
                     <Link href="/Notificacoes">
-                        <img src="Notifications.png" alt="Notificações" className="w-8 h-8" />
+                        <img src="notifications.png" alt="Notificações" className="w-8 h-8" />
                     </Link>
                 </div>
                 <nav>
                     <ul className="flex items-center justify-around p-2 mx-4">
                         <li>
                             <Link href="/TelaPrincipal" className="text-[#DC5802] hover:text-gray-300 flex flex-row gap-1">
-                                <img src="Home.png" alt="Home" className="w-full h-full" />
+                                <img src="home.png" alt="Home" className="w-full h-full" />
                                 Início
                             </Link>
                         </li>
                         <li>
                             <Link href="/Postos" className="text-[#DC5802] hover:text-gray-300 flex flex-row gap-1">
-                                <img src="Location.png" alt="Home" className="w-full h-full"/>
+                                <img src="location.png" alt="Home" className="w-full h-full"/>
                                 Postos
                             </Link>
                         </li>
