@@ -28,11 +28,11 @@ A plataforma facilita o encontro entre doadores e necessitados, permitindo o cad
 /Projeto
 │
 ├── public/                # Imagens, ícones e arquivos estáticos
-│   ├── fonts/         # Contém todas as fontes utilizadas no projeto
+│   ├── fonts/             # Contém todas as fontes utilizadas no projeto
 ├── src/
-│   ├── app/         # Páginas da aplicação (rotas Next.js)
-│   ├── components/   # Componentes reutilizáveis da interface          
-│   ├── data/          # Informações a serem consultadas
+│   ├── app/               # Páginas da aplicação (rotas Next.js)
+│   ├── components/        # Componentes reutilizáveis da interface          
+│   ├── data/              # Informações a serem consultadas
 ├── package.json           # Dependências e scripts
 └── README.md              # Documentação do projeto
 ```
