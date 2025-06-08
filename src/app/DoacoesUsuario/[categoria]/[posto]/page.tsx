@@ -64,7 +64,7 @@ type Props = {
   };
 };
 
-export default function RetiradaDoacaoPage({ params }: Props) {
+export default async function RetiradaDoacaoPage({ params }: Props) {
   const { posto } = params;
   const postoData: PostoData | undefined = postosMock[posto.toLowerCase()];
 
