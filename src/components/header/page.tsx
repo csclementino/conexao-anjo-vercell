@@ -22,7 +22,7 @@ export default function Header() {
                         </li>
                         <li>
                             <Link href="/Postos" className="text-[#DC5802] hover:text-gray-300 flex flex-row gap-1">
-                                <img src="location.png" alt="Home" className="w-full h-full"/>
+                                <img src="Location.png" alt="Home" className="w-full h-full"/>
                                 Postos
                             </Link>
                         </li>

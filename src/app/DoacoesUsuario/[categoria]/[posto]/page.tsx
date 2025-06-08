@@ -98,7 +98,7 @@ export default async function RetiradaDoacaoPage({ params }: Props) {
           <p className="font-bold text-black">Vá até o posto escolhido:</p>
           <p className="text-[#FD7014] font-semibold pt-2">{postoData.nome}</p>
           <div className="flex flex-row items-center">
-            <Image src="/location.png" alt="Localização" width={40} height={10} />
+            <Image src="/Location.png" alt="Localização" width={40} height={10} />
             <p className="text-black text-sm mt-1">{postoData.endereco}</p>
           </div>
         </div>

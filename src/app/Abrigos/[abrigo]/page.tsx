@@ -74,7 +74,7 @@ export default function PaginaAbrigo() {
                         <p>{abrigoData.capacidade}</p>
                     </div>
                     <div className="flex items-center gap-1 text-[#FD8F47] border border-[#FD8F47] rounded-xl px-2 py-1">
-                        <img src="/location.png" alt="Localização" className="w-[14px] h-[14px]" />
+                        <img src="/Location.png" alt="Localização" className="w-[14px] h-[14px]" />
                         <p>{abrigoData.local}</p>
                     </div>
                 </div>
@@ -83,7 +83,7 @@ export default function PaginaAbrigo() {
 
                 <div className="text-sm text-black space-y-3">
                     <div className="flex items-start gap-2">
-                        <img src="/location.png" alt="Endereço" className="w-5 h-5" />
+                        <img src="/Location.png" alt="Endereço" className="w-5 h-5" />
                         <p>{abrigoData.endereco}</p>
                     </div>
                     <div className="flex items-start gap-2">
