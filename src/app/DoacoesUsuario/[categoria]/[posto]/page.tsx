@@ -57,17 +57,17 @@ const postosMock: Record<string, PostoData> = {
   },
 };
 
-type PageParams = {
+interface RetiradaDoacaoPageProps {
   params: {
     categoria: string;
     posto: string;
   };
-  searchParams?: Record<string, string | string[] | undefined>;
-};
-export default function RetiradaDoacaoPage({ params }: PageParams) {
+}
+
+export default function RetiradaDoacaoPage({ params }: RetiradaDoacaoPageProps) {
   const { posto } = params;
   const postoData = postosMock[posto.toLowerCase()];
-  
+
   if (!postoData) return notFound();
 
   return (
