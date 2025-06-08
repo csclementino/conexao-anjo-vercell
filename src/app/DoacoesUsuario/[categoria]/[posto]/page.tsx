@@ -12,7 +12,6 @@ type PostoData = {
   documentos: string[];
 };
 
-
 const postosMock: Record<string, PostoData> = {
   'cruz-vermelha-brasileira': {
     nome: 'Cruz Vermelha Brasileira',
@@ -58,15 +57,16 @@ const postosMock: Record<string, PostoData> = {
   },
 };
 
-type PageProps = {
-  params: Promise<{
+type Props = {
+  params: {
     categoria: string;
     posto: string;
-  }>;
+  };
 };
 
-export default async function RetiradaDoacaoPage({ params }: PageProps) {
-  const {posto } = await params;
+// @ts-ignore
+export default function RetiradaDoacaoPage({ params }: Props) {
+  const { posto } = params;
   const postoData: PostoData | undefined = postosMock[posto.toLowerCase()];
 
   if (!postoData) return notFound();
