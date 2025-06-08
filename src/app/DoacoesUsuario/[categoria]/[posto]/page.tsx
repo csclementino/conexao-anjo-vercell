@@ -57,14 +57,11 @@ const postosMock: Record<string, PostoData> = {
   },
 };
 
-type Props = {
-  params: {
-    categoria: string;
-    posto: string;
-  };
-};
-
-export default async function RetiradaDoacaoPage({ params }: Props) {
+export default async function RetiradaDoacaoPage({
+  params,
+}: {
+  params: { categoria: string; posto: string };
+}) {
   const { posto } = params;
   const postoData: PostoData | undefined = postosMock[posto.toLowerCase()];
 
