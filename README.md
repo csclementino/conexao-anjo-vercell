@@ -1,16 +1,16 @@
-# 🚇 ViaMobility
+# 🤝 Conexão Anjo
 
-ViaMobility é um web aplicativo desenvolvido em **Next.js** com foco na mobilidade urbana. Ele foi projetado para funcionar em todos os dispositivos móveis, com **ênfase na resolução 360x800**, proporcionando uma experiência acessível e eficiente ao usuário.
+**Conexão Anjo** é um web aplicativo desenvolvido em **Next.js** com o propósito de conectar pessoas que precisam de ajuda com aquelas que desejam doar. O projeto é responsivo e foi especialmente otimizado para dispositivos móveis, com **ênfase na resolução 360x800**, garantindo acessibilidade e usabilidade.
 
-Este projeto busca otimizar a experiência de quem utiliza o metrô, oferecendo informações em tempo real sobre o status das linhas, previsão de chegada dos trens e permitindo o envio de reportes sobre segurança.
+A plataforma facilita o encontro entre doadores e necessitados, permitindo o cadastro de pedidos de ajuda, ofertas de doações e promovendo ações solidárias de forma simples, direta e segura.
 
 ---
 
 ## 🌐 Links
 
-- 🔗 **Repositório GitHub**: [https://github.com/ARC-ceo/ViaMobility-Vercel]
-- 🚀 **Site (Vercel)**: [https://via-mobility-vercell-ybs9-git-main-csclementinos-projects.vercel.app/]
-- 🎥 **Vídeo demonstrativo no YouTube**: [https://youtu.be/YVZ1wDfVEGA]
+- 🔗 **Repositório GitHub**: [https://github.com/csclementino/conexao-anjo-vercell]
+- 🚀 **Site (Vercel)**: [https://conexao-anjo-vercell.vercel.app/]
+- 🎥 **Vídeo demonstrativo no YouTube**: [https://youtu.be/E8nyVyWrAwM]
 
 ---
 
@@ -42,16 +42,13 @@ Este projeto busca otimizar a experiência de quem utiliza o metrô, oferecendo 
 ## 📡 API - Endpoints
 
 Base URL:  
-`https://viamobility-backend-dzb8a3hterh6d2ce.brazilsouth-01.azurewebsites.net/`
+`https://conexao-anjo-cdeabacdbngvghed.brazilsouth-01.azurewebsites.net`
 
 | Método | Endpoint                                                  | Descrição                          |
 |--------|-----------------------------------------------------------|------------------------------------|
-| GET    | `/api/next-train/{departure}/{linha}/{estacao}`          | Consulta o próximo trem            |
-| GET    | `/api/linhas`                                             | Retorna o status atual das linhas |
-| POST   | `/api/login-usuario`                                      | Efetua o login do usuário          |
+| POST   | `/api/login-usuario`                                      | Efetua a validação de login        |
 | POST   | `/api/cadastrar-usuario`                                  | Cadastra um novo usuário           |
-| POST   | `/api/cadastrar-reporte`                                  | Envia um reporte de problema       |
-| GET    | `/api/reportes/{user}`                                    | Lista todos os reportes do usuário|
+| GET    | `/api/buscar-usuario/{id_login}`                          | Traz as informações do usuario     |
 
 ---
 
@@ -60,7 +57,7 @@ Base URL:
 1. Clone o repositório:
 
 ```bash
-git clone [https://github.com/ARC-ceo/ViaMobility-Vercel]
+git clone [https://github.com/csclementino/conexao-anjo-vercell]
 ```
 
 2. Instale as dependências:
@@ -87,10 +84,10 @@ http://localhost:3000
 
 Para facilitar os testes da aplicação, utilize a conta abaixo:
 
-- **Email:** carlos@gmail.com  
-- **Senha:** senha123
+- **Email:** daniel.user@exemplo.com  
+- **Senha:** user123
 
-> Observação: Essa conta é apenas para fins de demonstração.
+> Observação: Essa conta é apenas para fins de demonstração. Há integração com o cadastro caso queira testar a funcionalidade também!
 
 
 ---
@@ -111,4 +108,4 @@ O layout foi otimizado especialmente para smartphones com resolução **360x800*
 
 ---
 
-> Desenvolvido com 💙 para melhorar a experiência de quem vive o transporte urbano diariamente.
+> Desenvolvido com 💙 para aproximar quem precisa de ajuda de quem quer fazer o bem.
