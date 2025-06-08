@@ -58,12 +58,15 @@ const postosMock: Record<string, PostoData> = {
 };
 
 
+interface PageProps {
+  params: {
+    categoria: string;
+    posto: string;
+  };
+  searchParams?: { [key: string]: string | string[] | undefined };
+}
 
-export default function RetiradaDoacaoPage({
-    params,
-  }: {
-    params: { categoria: string; posto: string };
-  }) {
+export default function RetiradaDoacaoPage({ params }: PageProps) {
   const { posto } = params;
   const postoData: PostoData | undefined = postosMock[posto.toLowerCase()];
 
