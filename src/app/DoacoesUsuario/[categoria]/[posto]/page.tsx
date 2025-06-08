@@ -57,15 +57,20 @@ const postosMock: Record<string, PostoData> = {
   },
 };
 
+// --- ALTERAÇÃO AQUI ---
+// Remove a importação de PageProps e a extensão na interface Props.
+// A tipagem 'Promise<any>' em params é a que o Vercel/TypeScript está esperando
+// para o Next.js 15 para componentes assíncronos.
 type Props = {
-  params: {
+  params: Promise<{ // Agora params é tipado como uma Promise que resolve para o objeto de parâmetros
     categoria: string;
     posto: string;
-  };
+  }>;
 };
+// --- FIM DA ALTERAÇÃO ---
 
 export default async function RetiradaDoacaoPage({ params }: Props) {
-  const { posto } = await params; 
+  const { posto } = await params;
   const postoData: PostoData | undefined = postosMock[posto.toLowerCase()];
 
   if (!postoData) return notFound();
