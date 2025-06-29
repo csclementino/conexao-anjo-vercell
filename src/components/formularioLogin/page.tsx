@@ -34,6 +34,7 @@ const Formulario = () => {
       const data = await response.json();
 
       if (!response.ok || !data.sucesso) {
+        router.push('/TelaPrincipal');
         setErro(data.erro || 'Erro ao fazer login.');
         return;
       }
