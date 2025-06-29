@@ -34,7 +34,6 @@ const Formulario = () => {
       const data = await response.json();
 
       if (!response.ok || !data.sucesso) {
-        router.push('/TelaPrincipal');
         setErro(data.erro || 'Erro ao fazer login.');
         return;
       }
@@ -44,6 +43,7 @@ const Formulario = () => {
       localStorage.setItem('username', data.nom_user.toString());
       router.push('/TelaPrincipal');
     } catch (error) {
+      router.push('/TelaPrincipal');
       console.error('Erro na requisição:', error);
       setErro('Erro ao conectar com o servidor.');
     }
