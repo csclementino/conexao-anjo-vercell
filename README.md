@@ -10,15 +10,15 @@ A plataforma facilita o encontro entre doadores e necessitados, permitindo o cad
 
 - 🔗 **Repositório GitHub**: [https://github.com/csclementino/conexao-anjo-vercell]
 - 🚀 **Site (Vercel)**: [https://conexao-anjo-vercell.vercel.app/]
-- 🎥 **Vídeo demonstrativo no YouTube**: [https://youtu.be/E8nyVyWrAwM]
+- 🎥 **Pitch**: [https://mega.nz/file/VjBDhTwL#nwpnsOp2VF4alwaj3JPHbqj2pxmAVL12lsm0DiY5m0o]
 
 ---
 
-## 👥 Participantes do projeto
+## 👥 Grupo ARC
 
-- Arthur Ribeiro Algate  RM: 560109  Turma: 1TDSZ
-- Carlos Santiago Clementino  RM: 561187
-- Rafael Nonato  RM: 560634
+- Arthur Ribeiro Algate 
+- Carlos Santiago Clementino 
+- Rafael Nonato  
 
 ---
 
@@ -57,7 +57,7 @@ Base URL:
 1. Clone o repositório:
 
 ```bash
-git clone [https://github.com/csclementino/conexao-anjo-vercell]
+git clone https://github.com/csclementino/conexao-anjo-vercell
 ```
 
 2. Instale as dependências:
@@ -98,7 +98,8 @@ Para facilitar os testes da aplicação, utilize a conta abaixo:
 - React
 - Axios
 - CSS Modules / Tailwind (se aplicável)
-- API RESTful (Backend em Azure)
+- API RESTful (Backend na Azure)
+- Fast API (Python)
 
 ---
 
